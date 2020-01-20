@@ -1,0 +1,46 @@
+body{
+    background-color: honeydew;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#banner{
+    width: 100%;
+    text-align: center;
+    color: indigo;
+}
+#main{
+    width: 100%;
+}
+#buttons{
+    margin-left: 30%;
+    margin-right: 30%;
+    width: 40%;
+    height: 500px;
+}
+#screen{
+    background-color: rgb(167, 170, 187);
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    text-align: right;
+    font-size: 450%;
+    border-radius: 5pt;
+}
+.calcButtons{
+    background-color: rgb(42, 70, 100);
+    border: none;
+    color: white;
+    padding: 32px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width: 100%;
+    height: 100%;
+    border-radius: 5pt;
+}
+.calcButtons:hover{
+    background-color: indigo;
+}
+.calcButtons:active{
+    background-color: rgb(13, 2, 20);
+}
