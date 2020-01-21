@@ -15,6 +15,8 @@ var buttonMinus = document.getElementById("minus");
 var buttonMultiply = document.getElementById("multiply");
 var buttonDivide = document.getElementById("divide");
 var buttonDot = document.getElementById("dot");
+var buttonPercent = document.getElementById("percent");
+var buttonRedo = document.getElementById("redo");
 
 var buttonEquals = document.getElementById("equals");
 
@@ -39,6 +41,8 @@ buttonPlus.addEventListener("click", buttonClickPlus);
 buttonMinus.addEventListener("click", buttonClickMinus);
 buttonDivide.addEventListener("click", buttonClickDivide);
 buttonDot.addEventListener("click", buttonClickDot);
+buttonPercent.addEventListener("click", buttonClickPercent);
+buttonRedo.addEventListener("click", buttonClickRedo);
 
 buttonEquals.addEventListener("click", buttonClickEquals);
 
@@ -99,6 +103,24 @@ function buttonClickDivide(){
 }
 function buttonClickDot(){
     showScreen(".");
+}
+function buttonClickPercent(){
+    if (isEmpty){
+        showScreen("0%");
+
+    } else {
+        showScreen("%");
+    }
+    
+}
+function buttonClickRedo(){
+    if(!isEmpty){
+        screen.innerHTML = screen.innerHTML.slice(0,-1);
+        if(screen.innerHTML === ""){
+            screen.innerHTML = 0;
+            isEmpty = true;
+        }
+    }
 }
 function buttonClickEquals(){
     let str = screen.innerHTML.replace(/[^-()\d/*+.]/g, '');

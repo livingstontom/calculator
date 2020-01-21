@@ -1,6 +1,7 @@
 body{
     background-color: honeydew;
     font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
 }
 #banner{
     width: 100%;
@@ -37,6 +38,7 @@ body{
     width: 100%;
     height: 100%;
     border-radius: 5pt;
+    font-weight: bold;
 }
 .calcButtons:hover{
     background-color: indigo;
